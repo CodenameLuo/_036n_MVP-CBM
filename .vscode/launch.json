@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "run_code",
+            "type": "debugpy",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "module": "train_blackbox",
+            "env": {
+                // "CUDA_VISIBLE_DEVICES": "4",
+            },
+            "args": [
+                "--model", "resnet50.a1_in1k",
+                "--gpu", "3"
+            ],
+            "justMyCode": false,
+            // "justMyCode": true,
+            "console": "integratedTerminal"
+        },
+    ]
+}

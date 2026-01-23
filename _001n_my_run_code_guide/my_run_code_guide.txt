@@ -1,0 +1,6 @@
+
+
+创建环境：
+（绝对路径）
+conda env create -f /home/HDD5/tjut_luocongyuan/_000n_00000000/_000n_uni/_004n_papers_codes/_011n_MVP_CBM/MVP_CBM/environment.yaml --prefix /home/HDD5/tjut_luocongyuan/_000n_00000000/_003n_backend/_001n_z001/_001n_conda_linux/_002n_my_conda_env_list/_012n_MVP_CBM
+
