@@ -11,7 +11,8 @@
                 // "CUDA_VISIBLE_DEVICES": "4",
             },
             "args": [
-                "--model", "resnet50.a1_in1k",
+                // "--model", "resnet50.a1_in1k",
+                "--model", "vit_base_patch16_224.orig_in21k_ft_in1k",
                 "--gpu", "3"
             ],
             "justMyCode": false,

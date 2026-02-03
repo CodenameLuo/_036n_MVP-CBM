@@ -353,6 +353,8 @@ if __name__ == '__main__':
     config.cls_weight = cls_weight_dict[config.dataset]
     config.num_class = num_class_dict[config.dataset]
 
+    # print(timm.list_models('vit_base*', pretrained=True))
+
     # 创建网络模型
     net = timm.create_model(config.model, pretrained=True, num_classes=config.num_class)
 
@@ -389,5 +391,4 @@ if __name__ == '__main__':
     train_net(net, config)
 
     print('done')
-        
 
