@@ -2,3 +2,5 @@
 python -m train_blackbox --model resnet50.a1_in1k --gpu 3
 
 python -m train_blackbox --model vit_base_patch16_224.orig_in21k_ft_in1k --gpu 3
+
+python -m train_mvpcbm --gpu 2

@@ -22,7 +22,9 @@ from torchvision.utils import make_grid, save_image
 import matplotlib.pyplot as plt
 
 import timm
-from dataset.dataset import SkinDataset, cmmdDataset, busiDataset, idridDataset, cmDataset, nctDataset, siimDataset
+from dataset.dataset import SkinDataset
+# cmmdDataset, busiDataset, idridDataset, cmDataset, nctDataset, siimDataset
+
 from model import mvpcbm
 import utils
 
@@ -31,12 +33,12 @@ DEBUG = False
 
 dataset_dict = {
     'isic2018': SkinDataset,
-    'cmmd': cmmdDataset,
-    'busi': busiDataset,
-    'idrid': idridDataset,
-    'cm': cmDataset,
-    'nct': nctDataset,
-    'siim': siimDataset
+    # 'cmmd': cmmdDataset,
+    # 'busi': busiDataset,
+    # 'idrid': idridDataset,
+    # 'cm': cmDataset,
+    # 'nct': nctDataset,
+    # 'siim': siimDataset
 }
 
 def train_net(model, config):
@@ -201,7 +203,7 @@ if __name__ == '__main__':
     parser = OptionParser()
     parser.add_option('-e', '--epochs', dest='epochs', default=100, type='int',
             help='number of epochs')
-    parser.add_option('-b', '--batch_size', dest='batch_size', default=128,
+    parser.add_option('-b', '--batch_size', dest='batch_size', default=64,
             type='int', help='batch size')
     parser.add_option('--warmup_epoch', dest='warmup_epoch', default=5, type='int')
     parser.add_option('--optimizer', dest='optimizer', default='adamw', type='str')
